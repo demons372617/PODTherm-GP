@@ -30,7 +30,7 @@ int main(int argc, char** argv) {
     MPI_Comm_rank(comm, &mpi_rank);
     //if(mpi_rank == 0){
     // Parse the POD parameters from POD_para.xml file
-    std::ifstream input_file("../../POD_Para.xml");
+    std::ifstream input_file("../../POD_Para_AI_CHIP.xml");
     pugi::xml_document doc;
     pugi::xml_parse_result result = doc.load(input_file);
     if (!result) {

@@ -34,7 +34,9 @@ add_executable(${PROJECT_NAME} ${ALL_SOURCES})
 #add_compiler_options(-mno-fancy-math-387)
 #set(CMAKE_CPP_FLAGS -mno-fancy-math-387)
 target_link_libraries(${PROJECT_NAME} dolfin)
-target_link_libraries(${PROJECT_NAME} /usr/lib/x86_64-linux-gnu/libpugixml.a)
+target_link_libraries(${PROJECT_NAME} /home/junli/pugixml/pugixml-1.13/build/libpugixml.so)
+
+# too complicated to slove the usr/include problem. May change is in the future to adapt different usr
 
 target_include_directories(${PROJECT_NAME}
     PUBLIC
